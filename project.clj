@@ -1,4 +1,4 @@
-(defproject gloss "0.2.6"
+(defproject org.clojars.zhaoyul/gloss "0.2.6"
   :description "speaks in bytes, so that you don't have to"
   :license {:name "Eclipse Public License - v 1.0"
             :url "http://www.eclipse.org/legal/epl-v10.html"
@@ -14,6 +14,7 @@
           :metadata {:doc/format :markdown}
           :namespaces [gloss.core gloss.io]}
   :repositories {"sonatype-oss-public" "https://oss.sonatype.org/content/groups/public/"}
+  :deploy-repositories [["releases" {:sign-releases false}                         ]]
   :profiles {:1.9 {:dependencies [[org.clojure/clojure "1.9.0-master-SNAPSHOT"]]}
              :dev {:dependencies [[org.clojure/clojure "1.8.0"]]}
              :1.7 {:dependencies [[org.clojure/clojure "1.7.0"]]}

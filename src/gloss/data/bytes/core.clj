@@ -28,9 +28,9 @@
 
 (defn ^ByteBuffer position
   ([^ByteBuffer buf]
-     (.position buf))
-  ([^ByteBuffer buf n]
-     (.position buf n)))
+   (.position buf))
+  ([^ByteBuffer buf ^long n]
+   (.position buf n)))
 
 (defn ^ByteBuffer limit [^ByteBuffer buf n]
   (.limit buf n))
